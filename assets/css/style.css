@@ -1227,7 +1227,6 @@ a.btn-line-black:hover {
 /*====================subheader====================*/
 
 #subheader {
-    background: url(../img/subheader-1.jpg) no-repeat 0 0 fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

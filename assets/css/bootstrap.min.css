@@ -5801,19 +5801,17 @@ position:relative!important
 	border-bottom-right-radius: 5px;
 	border-top-right-radius: 5px;
 	background-color: black;
-	/* height: 60px; */
+	height: 60px;
 	padding: 1px;
 }
 @media screen and (min-width: 1200px) {
 	.hotlineicon p{
-		font-size: 21px;
-		height: 58px;
+		font-size: 17px;
 	}
 }
 @media screen and (max-width: 1199px) {
 	.hotlineicon p{
 		font-size: 15px;
-		height: 46px;
 	}
 }
 .phone-mail {
@@ -5926,7 +5924,7 @@ position:relative!important
 
 @media screen and (max-width: 800px) {
 	.modal-content {
-		width: 100%;
+		width: 300px;
 		height: auto;
 	}
 }
@@ -5959,7 +5957,7 @@ form{
 	margin-top: 50px;
 }
 .control{
-	width: 80%;
+	width: 33vw;
 	background: transparent;
 	border: none;
 	outline: none;

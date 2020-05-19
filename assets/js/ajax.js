@@ -8,13 +8,13 @@ function PageReset(){
 function ckhformcontact(){
 	
 	if(document.getElementById("name").value==''){
-		alert("Vui lòng nhập tên bạn !"); 
+		alert("Please Enter Your Name"); 
 		document.getElementById("name").value='';
 		document.getElementById("name").focus();
 		return false;
 	}
 	if(document.getElementById("email").value==''){
-		alert("Vui lòng nhập email !"); 
+		alert("Please Enter Your Email"); 
 		document.getElementById("email").value='';
 		document.getElementById("email").focus();
 		return false;
@@ -26,9 +26,15 @@ function ckhformcontact(){
 		return false;
 	}
 	if(document.getElementById("phone").value==''){
-		alert("Vui lòng nhập số điện thoại !"); 
+		alert("Please Enter Your Phone"); 
 		document.getElementById("phone").value='';
 		document.getElementById("phone").focus();
+		return false;
+	}
+	if(document.getElementById("message").value==''){
+		alert("Please Enter Your Message"); 
+		document.getElementById("message").value='';
+		document.getElementById("message").focus();
 		return false;
 	}
     return true;
@@ -47,7 +53,7 @@ function ajaxmailcontact(){
 		cache:false,
 		async:false,
 		success: function(data) {
-			alert(data);
+			//alert(data);
 			if(data==1){
 				$('#name_error').css('display','none');
 				$('#email_error').css('display','none');

@@ -118,50 +118,18 @@
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                       specimen book. It has survived not only five centuries. </p> -->
               </div>
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="widget widget_recent_post">
-
-                  <h3>Liên hệ với chúng tôi</h3>
-                  <form name="contactForm" id="contact_form"
-                      method="post" action="mailsend.php">
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div id="name_error" class="error" required>Nhập tên của bạn</div>
-                              <div>
-                                  <input name="name" id="name" class="form-control" placeholder="Họ và tên"
-                                      type="text">
-                              </div>
-                              <div id="email_error" class="error">Vui lòng nhập địa chỉ email đúng !</div>
-                              <div>
-                                  <input name="email" id="email" class="form-control" placeholder="Email"
-                                      type="email" required>
-                              </div>
-                              <div id="phone_error" class="error">Vui lòng nhập số điện thoại !</div>
-                              <div>
-                                  <input name="phone" id="phone" class="form-control" placeholder="Số điện thoại"
-                                      type="text" required>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div id="message_error" class="error"></div>
-                              <div>
-                                  <textarea id="message" class="form-control"
-                                      placeholder="Nội dung"></textarea>
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <p id="submit">
-                                  <input value="Submit Form" onclick="return ckhformcontact()"
-                                      name="submit" class="submit-bt submit-bt2" type="submit">
-                              </p>
-                              <div id="mail_success" class="success">Tin nhắn bạn đã được gửi đi.
-                              </div>
-                              <div id="mail_fail" class="error">Đã Có lỗi khi gửi mail.</div>
-                          </div>
-                      </div>
-                  </form>
-                </div>
-            </div>
+              <div class="col-md-4 col-sm-4 col-xs-6">
+                  <div class="widget widget_recent_post">
+                      <!-- <h3>Latest News</h3>
+                      <ul>
+                          <li><a href="#">Lorem Ipsum is simply dummy text of the</a></li>
+                          <li><a href="#">Lorem Ipsum is simply dummy text of the</a></li>
+                          <li><a href="#">Lorem Ipsum is simply dummy text of the</a></li>
+                          <li><a href="#">Lorem Ipsum is simply dummy text of the</a></li>
+                          <li><a href="#">Lorem Ipsum is simply dummy text of the</a></li>
+                      </ul> -->
+                  </div>
+              </div>
           </div>
       </div>
       <div class="clearfix"></div>
@@ -200,14 +168,14 @@
         <p>Liên hệ với chúng tôi</p> 
       </div>
       <div class="contact-form">
-        <form id="contac-form" class="form" name="form" onsubmit="return check()" method="POST" action="mailsend.php">
-            <input type="text" name="name" class="control" placeholder="Họ và tên " required><br>
-            <input type="email" name="email" class="control" placeholder="Email" required><br>
-            <input type="number" name="phone" placeholder="Số điện thoại " class="control"><br>
-            <textarea name="message" class="control" placeholder="Nội dung" rows="7"></textarea><br>
-            <input type="submit" class="control submit" name="submit" value="Gửi">
+        <form id="contac-form"  class="form" name="form" onsubmit="return check()">
+          <input type="text" name="Name" class="control" placeholder="Họ và tên " required><br>
+          <input type="email" name="email" class="control" placeholder="Email" required><br>
+          <input type="number" name="number" placeholder="Số điện thoại " class="control" ><br>
+          <textarea name="message" class="control" placeholder="Nội dung" rows="7"></textarea><br>
+          <input type="submit" class="control submit" value="Gửi">
         </form>
-    </div>
+      </div>
 
       <div class="">
         <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button cancel">Huỷ</button>
@@ -225,8 +193,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js" integrity="sha256-rYPX3dXq8Nh532EvCS2foeyTgmzbcC8u+nCk/rEtKXA=" crossorigin="anonymous"></script>
 <script src="assets/js/policy.js"></script>
 <script src="assets/js/validateform.js"></script>
-<script src="assets/js/formValidation.js"></script>
-<script src="assets/js/ajax.js"></script> 
 <!-- Js File -->
 </body>
 </html>

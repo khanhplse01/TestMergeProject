@@ -1,5 +1,11 @@
+body {
+    background-image: url("../img/bg-4.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .logo {
-    color: white;
+    color: #fecb38;
     padding-top: 12px;
     font-weight: bold;
     font-family: 'Vollkorn', serif;
@@ -8,10 +14,16 @@
 .carousel-nha-mau img {
     width: 100%;
 }
+
+.carousel-home {
+    background-color: #111111;
+}
+
 .carousel-home img {
     height: 100%;
 }
-	
+
+
 /* .carousel-inner .item img {
     width: 100%;
 } */
@@ -24,20 +36,31 @@
         margin-top: 80px;
     }
     .carousel-home {
-	height: 650px;
+        height: 650px;
     }
 }
+
 @media (max-width: 768px) {
     #carousel-ban-ve img {
         width: 100%;
     }
     .carousel-home {
-	height: 200px;
+        height: 200px;
     }
-
-	.carousel-home .item img {
+    .carousel-home .item img {
         height: 100%;
-	width: 100%;
+        width: 100%;
     }
+}
 
+section {
+    background-color: rgba(0, 0, 0, .8) !important;
+}
+
+.bg-opa {
+    background-color: rgba(0, 0, 0, .8) !important;
+}
+
+#content {
+    background-color: rgba(0, 0, 0, .8) !important;
 }
