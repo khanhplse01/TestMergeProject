@@ -1,0 +1,43 @@
+.logo {
+    color: white;
+    padding-top: 12px;
+    font-weight: bold;
+    font-family: 'Vollkorn', serif;
+}
+
+.carousel-nha-mau img {
+    width: 100%;
+}
+.carousel-home img {
+    height: 100%;
+}
+	
+/* .carousel-inner .item img {
+    width: 100%;
+} */
+
+@media (min-width:768px) {
+    .carousel-home .item img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 80px;
+    }
+    .carousel-home {
+	height: 650px;
+    }
+}
+@media (max-width: 768px) {
+    #carousel-ban-ve img {
+        width: 100%;
+    }
+    .carousel-home {
+	height: 200px;
+    }
+
+	.carousel-home .item img {
+        height: 100%;
+	width: 100%;
+    }
+
+}
